@@ -30,9 +30,9 @@ There are considerations about having a hackathon at the Berlin chapter of [code
 * a logo (what could be a good symbol?) 
 * software architecture decisions (how to do it exactly, also see next paragraph)
 * a map with
-** restaurants that have such a menu on their website (where ever the software comes from, I wouldn’t restrict it to a specific solution)
-** restaurants that want such a menu in their website
-** professional web-developers and web-developers in training who would like to make restaurant websites where one can filter the menu
+- restaurants that have such a menu on their website (where ever the software comes from, I wouldn’t restrict it to a specific solution)
+- restaurants that want such a menu in their website
+- professional web-developers and web-developers in training who would like to make restaurant websites where one can filter the menu
 
 ## aspects of design decisions
 * what can codebar students build and what technologies are coaches around for? (for Berlin: not Ruby)
@@ -41,8 +41,8 @@ There are considerations about having a hackathon at the Berlin chapter of [code
 
 ## after ‘minimum viable product’
 * a backlog of less urgent wishes like in order to help future web developers to practice good practices like
-** being able to operate the page with a screenreader
-** (please add more things)
+- being able to operate the page with a screenreader
+- (please add more things)
 
 ## inspirations 
 * [https://allergymenu.uk/menu/AAA111]
@@ -51,5 +51,5 @@ There are considerations about having a hackathon at the Berlin chapter of [code
 ## license
 permissive
 
-# a note on safety and law
+## a note on safety and law
 I guess one should add a note that there is no guarantee for people with serious allergies. Whether or not an allergen is in the food is up to the restaurant, and the restaurant and the customer should be careful.
