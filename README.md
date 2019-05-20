@@ -45,19 +45,16 @@ There are considerations about having a hackathon at the Berlin chapter of [code
 - (please add more things)
 
 ## inspirations 
-* [https://allergymenu.uk/menu/AAA111]
-* [http://restaurantallergens.com/c2c]
+* https://allergymenu.uk/menu/AAA111
+* http://restaurantallergens.com/c2c
 
 ## current software
-https://codepen.io/BenjaminWand/pen/OYbjbO
+menu page only: https://codepen.io/BenjaminWand/pen/wbeOGE
 
 ### todo
-* maybe-filter
 * prices, short descriptions
-* captions (ice-cream, cake, else, coffee) and possibility to show or not show them when there is no thing in the list
-* actual website of an imaginary restaurant
-* CSS/look, possibly with graphics
-* info-button ‘caution: website is not responsible for ingredients, talk to the waiter if you have actual alergies’
+* headlines (ice-cream, cake, else, coffee) and possibility to show or not show them when there is no thing in the list
+* info-button ‘caution: website is not responsible for ingredients, talk to the waiter if you have actual allergies’
 
 ## license
 permissive
