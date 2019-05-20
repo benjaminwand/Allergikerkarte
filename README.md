@@ -1,15 +1,26 @@
 # Allergikerkarte, first thoughts
 
+## video explanation 
+https://www.youtube.com/watch?v=l-2dyJvZ5Ss 
+
+## current software
+menu page only: https://codepen.io/BenjaminWand/pen/wbeOGE
+
+### todo
+* short descriptions
+* headlines (ice-cream, cake, else, coffee) and possibility to show or not show them when there is no thing in the list
+* info-button ‘caution: website is not responsible for ingredients, talk to the waiter if you have actual allergies’
+
 ## motivations
 * giving web-development-students real-live-ish projects to make experiences and have something to showcase
 * getting menus on restaurant-websites that can be filtered for things like allergens and animal products (and once we are there make restaurant websites look more like 2019)
 
 ## conceptual thoughts
-* building a template/framework/pattern that web-development-trainees can use, as an open source project
+* building a template that web-development-trainees can use, as an open source project
 * decentralized, each restaurant website that uses it is their own project
 
 ## groups of people involved (apart from restaurant customers)
-1. people who build the template/framework/pattern
+1. people who build the template
 2. people who make restaurant-websites from it
 3. restaurant owners, it would be good if they could edit the menu without calling their webmaster
 
@@ -47,14 +58,6 @@ There are considerations about having a hackathon at the Berlin chapter of [code
 ## inspirations 
 * https://allergymenu.uk/menu/AAA111
 * http://restaurantallergens.com/c2c
-
-## current software
-menu page only: https://codepen.io/BenjaminWand/pen/wbeOGE
-
-### todo
-* prices, short descriptions
-* headlines (ice-cream, cake, else, coffee) and possibility to show or not show them when there is no thing in the list
-* info-button ‘caution: website is not responsible for ingredients, talk to the waiter if you have actual allergies’
 
 ## license
 permissive
