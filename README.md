@@ -3,9 +3,6 @@
 ## video explanation 
 https://www.youtube.com/watch?v=l-2dyJvZ5Ss 
 
-## current software
-menu page only: https://codepen.io/BenjaminWand/pen/wbeOGE
-
 ### todo
 * short descriptions
 * headlines (ice-cream, cake, else, coffee) and possibility to show or not show them when there is no thing in the list
@@ -46,9 +43,10 @@ There are considerations about having a hackathon at the Berlin chapter of [code
 3. professional web-developers and web-developers in training who would like to make restaurant websites where one can filter the menu
 
 ## aspects of design decisions
-* what can codebar students build and what technologies are coaches around for? (for Berlin: not Ruby)
+* things that need as little as possible updating -> probably static sites, if cloud solutions are used they need enterprise grade support
+* what can codebar students build and what technologies are coaches around for? ( -> for Berlin: not Ruby)
 * can we choose technologies in a way that most restaurants can keep their current web-hosting plan?
-* can we arrange that restaurant owners can edit their menu without calling their webmaster?
+* can we arrange that restaurant owners can edit their menu without calling their webmaster? -> static site generators? php?
 
 ## after ‘minimum viable product’
 * a backlog of less urgent wishes like in order to help future web developers to practice good practices like
@@ -61,6 +59,3 @@ There are considerations about having a hackathon at the Berlin chapter of [code
 
 ## license
 permissive
-
-## a note on safety and law
-I guess one should add a note that there is no guarantee for people with serious allergies, regarding the actual ingredients. Whether or not an allergen is in the food is up to the restaurant, and the restaurant and the customer should be careful.
