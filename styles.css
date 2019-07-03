@@ -37,7 +37,10 @@ button {
   font-style: italic;
 }
 .price {
-  float: right;
+  //float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .products ul {
@@ -48,6 +51,7 @@ button {
 .products li {
   list-style-type: none;
   padding: 0.25em;
+  position: relative;
 }
 
 .products li p {
