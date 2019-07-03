@@ -11,7 +11,7 @@
   margin-right: auto;
 }
 
-h2 {
+h2, h3 {
   text-align: center;
 }
 
@@ -28,6 +28,13 @@ button {
   margin-left: 1em;
   list-style-type: none;
   display: inline;
+}
+
+.name {
+	font-weight: 600;
+}
+.description {
+  font-style: italic;
 }
 .price {
   float: right;

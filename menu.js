@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  // filter food items
   $(".filters :checkbox").click(function() {
+  	// filter food items
   	if ($("input:checkbox:checked").length) {
   		$("li").show();
   		$("li[exclusion-category" + '*="' + $(this).val() + '-maybe"] .maybe').hide();
