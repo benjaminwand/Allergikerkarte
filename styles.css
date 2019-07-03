@@ -31,7 +31,7 @@ button {
 }
 
 .name {
-	font-weight: 600;
+	font-weight: 550;
 }
 .description {
   font-style: italic;
@@ -47,6 +47,7 @@ button {
 
 .products li {
   list-style-type: none;
+  padding: 0.25em;
 }
 
 .products li p {
