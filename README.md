@@ -1,8 +1,8 @@
 # Allergikerkarte, first thoughts
 
 ## videos 
-https://www.youtube.com/watch?v=l-2dyJvZ5Ss 
-https://youtu.be/WdIWog96EvI
+* https://www.youtube.com/watch?v=l-2dyJvZ5Ss 
+* https://youtu.be/WdIWog96EvI
 
 ## motivations
 * giving web-development-students real-live-ish projects to make experiences and have something to showcase
