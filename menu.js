@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  // hide/show filter button
+  $(".hidefilter").click(function() {
+    $(".hide").hide();
+    $(".show").show();
+  });
+  $(".showfilter").click(function() {
+    $(".show").hide();
+    $(".hide").show();
+  });
   $(".filters :checkbox").click(function() {
     // filter food items
       if ($("input:checkbox:checked").length) {
@@ -26,15 +35,6 @@ $(document).ready(function() {
         $(this).hide();
       }
     });
-  });
-  // hide/show filter button
-  $(".hidefilter").click(function() {
-    $(".hide").hide();
-    $(".show").show();
-  });
-  $(".showfilter").click(function() {
-    $(".show").hide();
-    $(".hide").show();
   });
 });
 
