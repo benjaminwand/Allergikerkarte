@@ -14,10 +14,15 @@
 
   <h2>Menu</h2>
 
-  <button class="hidecss hide hidefilter">Hide filters</button>
-  <button class="hidecss show showfilter">Show filters</button>
+<div class="buttonwrapper">
+  <button class="hidecss hideflr hidefilter">Hide filters</button>
+  <button class="hidecss showflr showfilter">Show filters</button>
 
-  <div  class="hide filters hidecss">
+  <button class="hidecss hideinf hideinfo">Got it</button>
+  <button class="hidecss showinf showinfo">More info</button>
+</div>
+
+  <div class="hideflr filters hidecss">
     <ul id="category">
       <li><label><input type="checkbox" name="category" value="vegan" />vegan<label></li>
       <li><label><input type="checkbox" name="category" value="nut-free" />nut-free<label></li>
@@ -26,39 +31,44 @@
     </ul>
   </div>
 
+  <p class="hidecss hideinf hideinfo infotext"> Please be aware that this website can’t guarantee that there won’t be allergens in your food. If you have a serious allergy you’ll still have to talk to the waiter or waitress.
+ </p>
+
+  <label><i class="fa fa-info-circle" style="font-size:24px"></i><label>
+
   <div class="products">
   	<section class="chapter">
   		<h3>ice-cream</h3>
 	    <ul>
-	      <li exclusion-category="vegan-red gluten-free-maybe">   
+	      <li exclusion-category="vegan-red gluten-free-maybe">
 	        <p class="name">vanilla ice-cream</p>
-	        <p class="description">lorem ipsum dolor sit amet consectetur adipisici elit, sed </p>     
+	        <p class="description">lorem ipsum dolor sit amet consectetur adipisici elit, sed </p>
 	        <p class="price">1.50 €</p>
 	      </li>
-	      <li exclusion-category="vegan-red gluten-free-maybe">   
+	      <li exclusion-category="vegan-red gluten-free-maybe">
 	        <p class="name">chocolate ice-cream</p>
-	        <p class="description"></p>    
+	        <p class="description"></p>
 	        <p class="price">1.50 €</p>
 
 	      </li>
-	      <li exclusion-category="vegan-red gluten-free-maybe">   
+	      <li exclusion-category="vegan-red gluten-free-maybe">
 	        <p class="name">strawberry ice-cream</p>
-	        <p class="description">eiusmod tempor incidunt ut labore et </p>    
-	        <p class="price">1.50 €</p>  
+	        <p class="description">eiusmod tempor incidunt ut labore et </p>
+	        <p class="price">1.50 €</p>
 	      </li>
-	      <li exclusion-category="vegan-red nut-free-red gluten-free-maybe">    
+	      <li exclusion-category="vegan-red nut-free-red gluten-free-maybe">
 	        <p class="name">hazelnut ice-cream</p>
-	        <p class="description">dolore magna aliqua ut enim ad </p>     
+	        <p class="description">dolore magna aliqua ut enim ad </p>
 	        <p class="price">1.50 €</p>
 	      </li>
-	      <li exclusion-category="gluten-free-maybe">    
+	      <li exclusion-category="gluten-free-maybe">
 	        <p class="name">vegan vanilla ice-cream</p>
-	        <p class="description">minim veniam, quis nostrud </p>     
+	        <p class="description">minim veniam, quis nostrud </p>
 	        <p class="price">1.50 €</p>
 	      </li>
-	      <li exclusion-category="gluten-free-maybe">  
+	      <li exclusion-category="gluten-free-maybe">
 	        <p class="name">vegan chocolate ice-cream</p>
-	        <p class="description">exercitation ullamco laboris nisi ut </p>     
+	        <p class="description">exercitation ullamco laboris nisi ut </p>
 	        <p class="price">1.50 €</p>
 	        <p class="maybe"> usually we serve ice-cream in a gluten containing cone but you can have it on a cardboard plate and then it is gluten-free</p>
 	      </li>
@@ -67,24 +77,24 @@
   	<section class="chapter">
   		<h3>cake</h3>
 	    <ul>
-	      <li exclusion-category="vegan-red nut-free-red gluten-free-red egg-free-red">  
-	        <p class="name">chocolate cake</p>    
-	        <p class="description">aliquid ex ea commodi consequat </p>      
-	        <p class="price">3 €</p>     
+	      <li exclusion-category="vegan-red nut-free-red gluten-free-red egg-free-red">
+	        <p class="name">chocolate cake</p>
+	        <p class="description">aliquid ex ea commodi consequat </p>
+	        <p class="price">3 €</p>
 	      </li>
-	      <li exclusion-category="gluten-free-red egg-free-red">    
+	      <li exclusion-category="gluten-free-red egg-free-red">
 	        <p class="name">mixed berries cake</p>
-	        <p class="description">quis aute iure reprehenderit in </p>    
-	        <p class="price">3 €</p> 
+	        <p class="description">quis aute iure reprehenderit in </p>
+	        <p class="price">3 €</p>
 	      </li>
 	    </ul>
 	</section>
   	<section class="chapter">
   	<h3>other</h3>
 	    <ul>
-	      <li exclusion-category="vegan-red">    
+	      <li exclusion-category="vegan-red">
 	        <p class="name">chocolate</p>
-	        <p class="description">voluptate velit esse cillum dolore eu </p>     
+	        <p class="description">voluptate velit esse cillum dolore eu </p>
 	        <p class="price">2.50 €</p>
 	      </li>
 	    </ul>
@@ -92,14 +102,14 @@
   	<section class="chapter">
 	<h3>drinks</h3>
 	    <ul>
-	      <li exclusion-category="">    
+	      <li exclusion-category="">
 	        <p class="name">espresso</p>
-	        <p class="description">fugiat nulla pariatur excepteur sint </p>     
+	        <p class="description">fugiat nulla pariatur excepteur sint </p>
 	        <p class="price">1.50 €</p>
 	      </li>
-	      <li exclusion-category="vegan-maybe">  
+	      <li exclusion-category="vegan-maybe">
 	        <p class="name">cappuccino</p>
-	        <p class="description">obcaecat cupiditat non proident, sunt </p>      
+	        <p class="description">obcaecat cupiditat non proident, sunt </p>
 	        <p class="price">3 €</p>
 	        <p class="maybe"> we have oat milk and soy milk, our cappucino can be made vegan, please ask for it</p>
 	      </li>

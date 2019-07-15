@@ -1,13 +1,27 @@
-$(document).ready(function() {$(".show").show();
+$(document).ready(function(){
+  $(".showflr").show();
+  $(".showinf").show();
+
   // hide/show filter button
   $(".hidefilter").click(function() {
-    $(".hide").hide();
-    $(".show").show();
+    $(".hideflr").hide();
+    $(".showflr").show();
   });
   $(".showfilter").click(function() {
-    $(".show").hide();
-    $(".hide").show();
+    $(".showflr").hide();
+    $(".hideflr").show();
   });
+
+  // hide/show filter button
+  $(".hideinfo").click(function() {
+    $(".hideinf").hide();
+    $(".showinf").show();
+  });
+  $(".showinfo").click(function() {
+    $(".showinf").hide();
+    $(".hideinf").show();
+  });
+
   $(".filters :checkbox").click(function() {
     // filter food items
       if ($("input:checkbox:checked").length) {
@@ -21,6 +35,7 @@ $(document).ready(function() {$(".show").show();
         $("li").show();
         $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
       }
+
     // hiding chapters
     $(".chapter").each(function() {
       var hiddenLiItems = $(this)
@@ -37,4 +52,3 @@ $(document).ready(function() {$(".show").show();
     });
   });
 });
-

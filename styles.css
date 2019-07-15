@@ -6,9 +6,9 @@
   border-style: solid;
   border-width: 5px;
   border-color: lightgrey;
-  max-width: 350px;    
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 500px;
+  margin: 0 auto 0 auto;
+  padding: 0 1em 0 1em;
 }
 
 h2, h3 {
@@ -17,6 +17,10 @@ h2, h3 {
 
 button {
   margin: 0em 1.5em 1em;
+}
+
+.buttonwrapper {
+  margin: 1em 0;
 }
 
 .filters ul {
@@ -29,6 +33,11 @@ button {
   list-style-type: none;
   display: inline;
       white-space:nowrap;
+}
+
+.infotext {
+  font-family: sans-serif;
+  font-size: small;
 }
 
 .name {
@@ -65,4 +74,3 @@ button {
   display: none;
   color: #A55C09;
 }
-
