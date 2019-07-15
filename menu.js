@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() {$(".show").show();
   // hide/show filter button
   $(".hidefilter").click(function() {
     $(".hide").hide();
