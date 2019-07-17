@@ -21,7 +21,6 @@ h3 {
   position: relative;
   height: 0.5em;
 }
-
 .buttonwrapper button {
   position: absolute;
   top: 0;
@@ -32,7 +31,6 @@ h3 {
   margin: 0em;
   padding: 0em;
 }
-
 .filters li {
   margin-left: 1em;
   list-style-type: none;
@@ -47,6 +45,11 @@ h3 {
   border-width: 1px;
   border-color: grey;
   padding: 0.5em 0.5em 0.5em 0.9em;
+}
+.infotext button {
+  float: right;
+  margin: 0;
+  padding: 0;
 }
 
 .name {
@@ -72,18 +75,15 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .products ul {
   padding: 0em 1em;
   margin-top: 0.5em;
 }
-
 .products li {
   list-style-type: none;
   padding: 0.25em;
   position: relative;
 }
-
 .products li p {
   padding: 0em;
   margin: 0em;
