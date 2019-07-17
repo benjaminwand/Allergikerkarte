@@ -16,14 +16,14 @@ h3 {
 }
 
 .buttonwrapper {
-  margin: 0.5em 0;
+  margin: 0;
   display: block;
   position: relative;
-  height: 0.5em;
+  height: 1em;
 }
 .buttonwrapper button {
   position: absolute;
-  top: 0;
+  top: -1em;
   right: 0;
 }
 
