@@ -45,6 +45,7 @@ h3 {
 }
 .description {
   font-style: italic;
+  max-width: 95%;
 }
 .price {
   position: absolute;
@@ -54,6 +55,7 @@ h3 {
 
 .column {
   width: 350px;
+  flex-grow: 0.5;
 }
 
 .products {
