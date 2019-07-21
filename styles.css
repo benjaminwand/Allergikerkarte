@@ -1,7 +1,9 @@
+/****** hide things that will be used in JavaScript ******/
 .hidecss {
   display: none;
 }
 
+/****** fonts and colors ******/
 .border {
   border-style: solid;
   border-width: 5px;
@@ -10,6 +12,23 @@
   padding: 0 1em 0 1em;
 }
 
+.infotext {
+  font-family: sans-serif;
+  font-size: small;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  padding: 0.5em 0.5em 0.5em 0.9em;
+}
+.name {
+  font-weight: bold;
+}
+.description {
+  font-style: italic;
+  max-width: 95%;
+}
+
+/****** measurements and general ******/
 h2,
 h3 {
   text-align: center;
@@ -27,6 +46,10 @@ h3 {
   right: 0;
 }
 
+.filterwrapper button {
+  margin: 0;
+}
+
 .filters ul {
   margin: 0em;
   padding: 0em;
@@ -38,31 +61,10 @@ h3 {
   white-space: nowrap;
 }
 
-.infotext {
-  font-family: sans-serif;
-  font-size: small;
-  border-style: solid;
-  border-width: 1px;
-  border-color: grey;
-  padding: 0.5em 0.5em 0.5em 0.9em;
-}
 .infotext button {
   float: right;
   margin: 0;
   padding: 0;
-}
-
-.name {
-  font-weight: bold;
-}
-.description {
-  font-style: italic;
-  max-width: 95%;
-}
-.price {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .column {
@@ -87,6 +89,12 @@ h3 {
 .products li p {
   padding: 0em;
   margin: 0em;
+}
+
+.price {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .maybe {

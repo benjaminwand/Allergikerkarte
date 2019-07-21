@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script type="text/javascript" src="menu.js"></script>
   </head>
+
   <body>
     <div class="border">
       <h2>Menu</h2>
@@ -25,56 +26,58 @@
         </button>
       </div>
 
-      <div class="hideflr filters hidecss">
-        <ul id="category">
-          <li>
-            <label
-              ><input
-                type="checkbox"
-                name="category"
-                value="vegan"
-              />vegan</label
-            >
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <label
-              ><input
-                type="checkbox"
-                name="category"
-                value="nut-free"
-              />nut-free</label
-            >
-          </li>
-          <li>
-            <label
-              ><input
-                type="checkbox"
-                name="category"
-                value="gluten-free"
-              />gluten-free</label
-            >
-          </li>
-          <li>
-            <label
-              ><input
-                type="checkbox"
-                name="category"
-                value="egg-free"
-              />egg-free</label
-            >
-          </li>
-          <li>
-            <button class="showinf showinfo">More info</button>
-          </li>
-        </ul>
-        <p class="hidecss hideinf hideinfo infotext">
-          <button class="hideinf hideinfo">X</button>
-          Please be aware that this website can’t guarantee that there won’t be
-          allergens in your food. If you have serious allergies please talk to
-          the waiter or waitress.
-        </p>
+      <div class="filterwrapper">
+        <div class="hideflr filters hidecss">
+          <ul id="category">
+            <li>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="vegan"
+                />vegan</label
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="nut-free"
+                />nut-free</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="gluten-free"
+                />gluten-free</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="egg-free"
+                />egg-free</label
+              >
+            </li>
+            <li>
+              <button class="showinf showinfo">More info</button>
+            </li>
+          </ul>
+          <p class="hidecss hideinf hideinfo infotext">
+            <button class="hideinf hideinfo">X</button>
+            Please be aware that this website can’t guarantee that there won’t
+            be allergens in your food. If you have serious allergies please talk
+            to the waiter or waitress.
+          </p>
+        </div>
       </div>
 
       <div class="products">
