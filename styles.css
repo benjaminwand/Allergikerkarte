@@ -86,7 +86,8 @@ h3 {
   padding: 0.25em;
   position: relative;
 }
-.products li p {
+
+.products p {
   padding: 0em;
   margin: 0em;
 }
