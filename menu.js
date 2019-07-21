@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(".hideflr").show();
   });
 
-  // hide/show filter button
+  // hide/show info button
   $(".hideinfo").click(function() {
     $(".hideinf").hide();
     $(".showinf").show();
