@@ -3,12 +3,12 @@
   display: none;
 }
 
-/****** fonts and colors ******/
+/****** includes fonts and colors ******/
 .border {
   border-style: solid;
-  border-width: 5px;
+  border-width: 0.1px;
   border-color: lightgrey;
-  margin: 0 auto 0 auto;
+  margin: 0.5em auto 0 auto;
   padding: 0 1em 0 1em;
 }
 
@@ -29,9 +29,25 @@
 }
 
 /****** measurements and general ******/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h2,
 h3 {
   text-align: center;
+}
+
+.startpage {
+  height: 100vh;
+  background-image: url("images/board.jpg");
+  background-size: cover;
+  border-style: solid;
+  border-width: 0.1px;
+  margin: 0 auto 0 auto;
+  padding: 0 1em 0 1em;
 }
 
 .buttonwrapper {
