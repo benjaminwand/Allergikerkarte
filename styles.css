@@ -95,7 +95,7 @@ h3 {
   text-align: center;
 }
 
-#startpage {
+#about {
   height: 100vh;
   background-image: url("images/board.jpg");
   background-size: cover;
@@ -104,7 +104,7 @@ h3 {
   margin: 0 auto 0 auto;
   padding: 0 1em 0 1em;
 }
-#startpage span,
+#about span,
 ul {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 0.5em;
