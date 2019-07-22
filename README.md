@@ -1,21 +1,15 @@
-# Allergikerkarte, first thoughts
+# Allergikerkarte
 
 ## videos 
 * https://www.youtube.com/watch?v=l-2dyJvZ5Ss 
 * https://youtu.be/WdIWog96EvI
 
-## motivations
-* giving web-development-students real-live-ish projects to make experiences and have something to showcase
-* getting menus on restaurant-websites that can be filtered for things like allergens and animal products (and once we are there make restaurant websites look more like 2019)
+## motivation
+Getting menus on restaurant-websites that can be filtered for things like allergens and animal products, and once we are there make restaurant websites accessible and responsive.
 
 ## conceptual thoughts
-* building a template that web-development-trainees can use, as an open source project
-* decentralized, each restaurant website that uses it is their own project
-
-## groups of people involved (apart from restaurant customers)
-1. people who build the template
-2. people who make restaurant-websites from it
-3. restaurant owners, it would be good if they could edit the menu without calling their webmaster
+* Building a template that newbie-web-developers can use, as an open source project and possibly making a tutorial for it.
+* Decentralized, each restaurant website that uses it is their own project.
 
 ## what would one filter for?
 That depends what the restaurant is offering. For someone who is selling ice-cream and all their items are vegetarian already, there is no point in filtering vor ‘vegetarian’. Filter for aspects where some of your dishes has it and others don’t. Recommended are vegetarian, vegan and some of the most common food allergies/intolerances (dairy, eggs, nuts, peanuts, gluten-containing grains, seafood, soy). Obviously this can be made as complicated as one wishes, what makes sense depends in the profile of the restaurant.
@@ -26,21 +20,11 @@ Some dishes can be made vegetarian. Some dishes can be served without the peanut
 * ‘x’-free
 * can be made without ‘x’
 
-## aspects of design decisions
-* things that need as little as possible updating, if cloud solutions are used they need enterprise grade support
-* is easily built
-* most restaurants will be able to keep their current web-hosting plan
-* restaurant owners should be able edit their menu without calling their webmaster
-
-## concrete todos
-* short descriptions for dishes
-* info-button ‘caution: website is not responsible for ingredients, talk to the waiter if you have actual allergies’
-* a look
-
-## next plans
-Trying to write a Jekyll-plugin that specifically generates the menu (with more html-foo in it than Jekyll usually does)
+## technology used 
+html, CSS/SASS, jQuery
 
 ## needed/to-do
+* a look, start SASS
 * an English name
 * a logo (what could be a good symbol?) 
 * a map with
@@ -48,6 +32,10 @@ Trying to write a Jekyll-plugin that specifically generates the menu (with more 
 2. restaurants that want such a menu in their website
 3. professional web-developers and web-developers in training who would like to make restaurant websites where one can filter the menu
 * tutorials
+
+## dependencies:
+* prettier
+* sass
 
 ## inspirations 
 * https://allergymenu.uk/menu/AAA111
