@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   $(".showflr").show();
   $(".showinf").show();
 
@@ -22,19 +22,21 @@ $(document).ready(function(){
     $(".hideinf").show();
   });
 
+  // filter food items with checkboxes
   $(".filters :checkbox").click(function() {
-    // filter food items
-      if ($("input:checkbox:checked").length) {
-        $("li").show();
-        $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
-        $("input:checkbox:checked").each(function() {
-          $('li[exclusion-category*="' + $(this).val() + '-red"]').hide();
-          $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').show();
-        });
-      } else {
-        $("li").show();
-        $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
-      }
+    if ($("input:checkbox:checked").length) {
+      $("li").show();
+      $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
+      $("input:checkbox:checked").each(function() {
+        $('li[exclusion-category*="' + $(this).val() + '-red"]').hide();
+        $(
+          'li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe'
+        ).show();
+      });
+    } else {
+      $("li").show();
+      $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
+    }
 
     // hiding chapters
     $(".chapter").each(function() {
