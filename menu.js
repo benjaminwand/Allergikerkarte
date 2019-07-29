@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $(".mobile-navigation").click(function() {
+    $("#myTopnav").toggle();
+  });
+
   $(".showflr").show();
   $(".showinf").show();
 
@@ -23,9 +27,17 @@ $(document).ready(function() {
   });
 
   // filter food items with checkboxes
-  $(".filters :checkbox").click(function() {
-    if ($("input:checkbox:checked").length) {
-      $("li").show();
+  $(".filters").click(function() {
+    const values = $("input:checkbox:checked, input:radio:checked");
+    if (values) {
+      console.log(values);
+      values.map(value => {
+        console.log(value);
+      });
+    }
+
+    if ($("input:checkbox:checked, input:radio:checked").length) {
+      $(".products li").show();
       $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
       $("input:checkbox:checked").each(function() {
         $('li[exclusion-category*="' + $(this).val() + '-red"]').hide();
@@ -34,7 +46,7 @@ $(document).ready(function() {
         ).show();
       });
     } else {
-      $("li").show();
+      $(".products li").show();
       $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
     }
 
