@@ -27,26 +27,18 @@ $(document).ready(function() {
   });
 
   // filter food items with checkboxes
-  $(".filters").click(function() {
-    const values = $("input:checkbox:checked, input:radio:checked");
-    if (values) {
-      console.log(values);
-      values.map(value => {
-        console.log(value);
-      });
-    }
-
-    if ($("input:checkbox:checked, input:radio:checked").length) {
-      $(".products li").show();
+  $(".filters :checkbox, :radio").click(function() {
+    if ($("input[name=category]:checked").length) {
+      $("li").show();
       $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
-      $("input:checkbox:checked").each(function() {
+      $("input:checked").each(function() {
         $('li[exclusion-category*="' + $(this).val() + '-red"]').hide();
         $(
           'li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe'
         ).show();
       });
     } else {
-      $(".products li").show();
+      $("li").show();
       $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
     }
 
