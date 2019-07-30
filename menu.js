@@ -32,7 +32,7 @@ $(document).ready(function() {
   $(".filters :checkbox, :radio").click(function() {
     if ($("input[name=category]:checked").length) {
       $(".products li").show();
-      $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
+      $(".products li .maybe").hide();
       $("input:checked").each(function() {
         $('li[exclusion-category*="' + $(this).val() + '-red"]').hide();
         $(
