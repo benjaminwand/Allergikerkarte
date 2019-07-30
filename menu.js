@@ -3,8 +3,10 @@ $(document).ready(function() {
     $("#myTopnav").toggle();
   });
 
-  $(".showflr").show();
-  $(".showinf").show();
+  $(".maybe").hide(); // hide maybe-texts
+
+  $(".showflr").show(); // show filter-button
+  $(".showinf").show(); // show info-button
 
   // hide/show filter button
   $(".hidefilter").click(function() {
@@ -29,7 +31,7 @@ $(document).ready(function() {
   // filter food items with checkboxes
   $(".filters :checkbox, :radio").click(function() {
     if ($("input[name=category]:checked").length) {
-      $("li").show();
+      $(".products li").show();
       $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
       $("input:checked").each(function() {
         $('li[exclusion-category*="' + $(this).val() + '-red"]').hide();
@@ -38,7 +40,7 @@ $(document).ready(function() {
         ).show();
       });
     } else {
-      $("li").show();
+      $(".products li").show();
       $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
     }
 
