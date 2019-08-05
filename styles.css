@@ -1,12 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-/****** hide things that will be used in JavaScript ******/
+/* hide things that will be used in JavaScript */
 .hidecss {
   display: none;
+}
+
+/* nav related things */
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #254441;
+  font-family: "Open Sans", sans-serif;
+}
+
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #254441;
+}
+
+/* Styling the links */
+nav a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+  background-color: #000000;
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width: 768px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    background-color: #254441;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+  }
+
+  .toggle:hover {
+    background-color: #000000;
+  }
+
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^="drop"]:checked + ul {
+    display: block;
+  }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 330px) {
+  nav ul li {
+    display: block;
+    width: 94%;
+  }
 }
 
 .topnav-desktop a {
@@ -22,7 +145,7 @@ body {
 .topnav-desktop {
   background-color: #333;
   overflow: hidden;
-    position: fixed;
+  position: fixed;
 }
 
 @media screen and (min-width: 600px) {
@@ -60,6 +183,12 @@ body {
     top: 0;
     z-index: 1;
   }
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
 }
 
 .border {
