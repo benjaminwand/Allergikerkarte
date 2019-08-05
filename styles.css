@@ -209,11 +209,13 @@ h1 {
 }
 .name {
   font-weight: bold;
-  max-width: 85%; // name not running into price
+  /* name not running into price */
+  max-width: 85%;
 }
 .description {
   font-style: italic;
-  max-width: 95%; // descrition not coming too close to next row
+  /* descrition not coming too close to next row */
+  max-width: 95%;
 }
 
 h2,
