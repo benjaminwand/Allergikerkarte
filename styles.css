@@ -134,14 +134,6 @@ nav a:hover {
   }
 }
 
-.border {
-  border-style: solid;
-  border-width: 0.1px;
-  border-color: lightgrey;
-  margin: 0 auto 0 auto;
-  padding: 0 1em 0 1em;
-}
-
 .infotext {
   font-family: sans-serif;
   font-size: small;
@@ -178,8 +170,6 @@ h3 {
 #about {
   background-image: url("images/board.jpg");
   background-size: cover;
-  border-style: solid;
-  border-width: 0.1px;
   margin: 0 auto 0 auto;
   padding: 0 1em 0 1em;
 }
