@@ -1,8 +1,4 @@
 $(document).ready(function() {
-  $(".mobile-navigation").click(function() {
-    $("#myTopnav").toggle();
-  });
-
   $(".maybe").hide(); // hide maybe-texts
 
   $(".showflr").show(); // show filter-button
