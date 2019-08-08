@@ -1,7 +1,12 @@
 /* sizes and colors of menu */
-/* coordinate this with logo */
+$nav-height: 70px; /* coordinate this with logo */
+$menu-background: #254441;
+$menu-background-hover: #000;
+$menu-text: #fff;
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
 html,
 body {
   margin: 0;
@@ -15,19 +20,19 @@ body {
 
 /* nav related things */
 .navspace {
-  height: 70px;
+  height: $nav-height;
 }
 
 .toggle,
-[id^=drop] {
+[id^="drop"] {
   display: none;
 }
 
 nav {
   margin: 0;
   padding: 0;
-  color: #fff;
-  background-color: #254441;
+  color: $menu-text;
+  background-color: $menu-background;
   font-family: "Open Sans", sans-serif;
   z-index: 1;
   position: fixed;
@@ -39,7 +44,7 @@ nav {
   padding: 0 30;
   float: left;
   font-size: 20px;
-  line-height: 70px;
+  line-height: $nav-height;
 }
 
 /* Since we'll have the "ul li" "float:left"
@@ -65,26 +70,27 @@ nav ul li {
   margin: 0px;
   display: inline-block;
   float: left;
-  background-color: #254441;
+  background-color: $menu-background;
 }
 
 /* Styling the links */
 nav a {
   display: block;
   padding: 0px 20px;
-  color: #fff;
+  color: $menu-text;
   font-size: 17px;
   text-decoration: none;
-  line-height: 70px;
+  line-height: $nav-height;
 }
 
 /* Background color change on Hover */
 nav a:hover {
-  background-color: #000;
+  background-color: $menu-background-hover;
 }
 
 /* Media Queries
 --------------------------------------------- */
+
 @media all and (max-width: 768px) {
   #logo {
     display: block;
@@ -97,14 +103,14 @@ nav a:hover {
   /* Hide the navigation menu by default */
   /* Also hide the  */
   .toggle + a,
-.menu {
+  .menu {
     display: none;
   }
 
   /* Stylinf the toggle lable */
   .toggle {
     display: block;
-    background-color: #254441;
+    background-color: $menu-background;
     padding: 14px 20px;
     font-size: 17px;
     text-decoration: none;
@@ -112,11 +118,11 @@ nav a:hover {
   }
 
   .toggle:hover {
-    background-color: #000;
+    background-color: $menu-background-hover;
   }
 
   /* Display Dropdown when clicked on Parent Lable */
-  [id^=drop]:checked + ul {
+  [id^="drop"]:checked + ul {
     display: block;
   }
 
@@ -126,12 +132,14 @@ nav a:hover {
     width: 100%;
   }
 }
+
 @media all and (max-width: 330px) {
   nav ul li {
     display: block;
     width: 94%;
   }
 }
+
 .fullpage {
   min-height: 100vh;
 }
@@ -150,13 +158,11 @@ h3 {
   border-color: grey;
   padding: 0.5em 0.5em 0.5em 0.9em;
 }
-
 .name {
   font-weight: bold;
   /* name not running into price */
   max-width: 85%;
 }
-
 .description {
   font-style: italic;
   /* descrition not coming too close to next row */
@@ -169,7 +175,6 @@ h3 {
   margin: 0 auto 0 auto;
   padding: 0 1em 0 1em;
 }
-
 #about span ul {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 0.5em;
@@ -183,7 +188,6 @@ h3 {
   position: relative;
   height: 1em;
 }
-
 .buttonwrapper button {
   position: absolute;
   top: -1em;
@@ -198,7 +202,6 @@ h3 {
   margin: 0em;
   padding: 0em;
 }
-
 .filters li {
   margin-left: 1em;
   list-style-type: none;
@@ -222,12 +225,10 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .products ul {
   padding: 0em 1em;
   margin-top: 0.5em;
 }
-
 .products li {
   list-style-type: none;
   padding: 0.25em;
@@ -249,5 +250,3 @@ h3 {
   font-style: italic;
   color: #a55c09;
 }
-
-/*# sourceMappingURL=styles.css.map */
