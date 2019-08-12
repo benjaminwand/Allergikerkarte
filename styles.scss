@@ -158,6 +158,17 @@ h3 {
   border-color: grey;
   padding: 0.5em 0.5em 0.5em 0.9em;
 }
+
+.infotext button {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.no-style-button {
+  border: none;
+  background-color: inherit;
+}
+
 .name {
   font-weight: bold;
   /* name not running into price */
@@ -175,10 +186,9 @@ h3 {
   margin: 0 auto 0 auto;
   padding: 0 1em 0 1em;
 }
-#about span ul {
+
+.white-bg {
   background-color: rgba(255, 255, 255, 0.75);
-  padding: 0.5em;
-  line-height: 2;
 }
 
 /* menu-page */
@@ -207,12 +217,6 @@ h3 {
   list-style-type: none;
   display: inline;
   white-space: nowrap;
-}
-
-.infotext button {
-  float: right;
-  margin: 0;
-  padding: 0;
 }
 
 .column {
