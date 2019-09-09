@@ -1,11 +1,6 @@
 /* sizes and colors of menu */
 /* coordinate this with logo */
-/* sizes and colors of menu */
-/* coordinate this with logo */
 /* nav related things */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
-@import url(https://fonts.googleapis.com/css?family=Oswald&display=swap);
 .toggle,
 [id^=drop] {
   display: none;
@@ -13,7 +8,6 @@
 
 #logo {
   padding: 0;
-  /*  width: 100%;*/
   text-align: center;
 }
 
@@ -124,137 +118,5 @@ nav a {
     width: 94%;
   }
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
 
-/* hide things that will be used in JavaScript */
-.hidecss {
-  display: none;
-}
-
-.fullpage {
-  min-height: 100vh;
-  padding-top: 70px;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
-  font-family: Oswald;
-}
-
-.infotext {
-  font-family: sans-serif;
-  font-size: small;
-  border-style: solid;
-  border-width: 1px;
-  border-color: grey;
-  padding: 0.5em 0.5em 0.5em 0.9em;
-}
-
-.infotext button {
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
-.no-style-button {
-  border: none;
-  background-color: inherit;
-}
-
-.name {
-  font-weight: bold;
-  /* name not running into price */
-  max-width: 85%;
-}
-
-.description {
-  font-style: italic;
-  /* descrition not coming too close to next row */
-  max-width: 95%;
-}
-
-#about {
-  background-image: url("images/board.jpg");
-  background-size: cover;
-  margin: 0 auto 0 auto;
-}
-
-.white-bg {
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-/* menu-page */
-.buttonwrapper {
-  margin: 0;
-  display: block;
-  position: relative;
-  height: 1em;
-}
-
-.buttonwrapper button {
-  position: absolute;
-  top: -1em;
-  right: 0;
-}
-
-.filterwrapper button {
-  margin: 0;
-}
-
-.filters ul {
-  margin: 0em;
-  padding: 0em;
-}
-
-.filters li {
-  margin-left: 1em;
-  list-style-type: none;
-  display: inline;
-  white-space: nowrap;
-}
-
-.column {
-  width: 350px;
-  flex-grow: 0.2;
-}
-
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.products ul {
-  padding: 0em 1em;
-  margin-top: 0.5em;
-}
-
-.products li {
-  list-style-type: none;
-  padding: 0.25em;
-  position: relative;
-}
-
-.products p {
-  padding: 0em;
-  margin: 0em;
-}
-
-.price {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.maybe {
-  font-style: italic;
-  color: #a55c09;
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=_navigation.css.map */

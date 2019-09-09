@@ -1,9 +1,5 @@
-/* sizes and colors of menu */
-$nav-height: 70px; /* coordinate this with logo */
-$menu-background: #254441;
-$menu-background-hover: #000;
-$menu-text: #fff;
-$header-font: Oswald;
+@import "config";
+@import "navigation";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
@@ -20,130 +16,9 @@ body {
   display: none;
 }
 
-/* nav related things */
-.navspace {
-  height: $nav-height;
-}
-
-.toggle,
-[id^="drop"] {
-  display: none;
-}
-
-nav {
-  margin: 0;
-  padding: 0;
-  color: $menu-text;
-  background-color: $menu-background;
-  font-family: "Open Sans", sans-serif;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-}
-
-#logo {
-  display: block;
-  padding: 0 30;
-  float: left;
-  font-size: 20px;
-  line-height: $nav-height;
-}
-
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-nav:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
-nav ul {
-  float: right;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-}
-
-/* Positioning the navigation items inline */
-nav ul li {
-  margin: 0px;
-  display: inline-block;
-  float: left;
-  background-color: $menu-background;
-}
-
-/* Styling the links */
-nav a {
-  display: block;
-  padding: 0px 20px;
-  color: $menu-text;
-  font-size: 17px;
-  text-decoration: none;
-  line-height: $nav-height;
-}
-
-/* Background color change on Hover */
-nav a:hover {
-  background-color: $menu-background-hover;
-}
-
-/* Media Queries
---------------------------------------------- */
-
-@media all and (max-width: 768px) {
-  #logo {
-    display: block;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    float: none;
-  }
-
-  /* Hide the navigation menu by default */
-  /* Also hide the  */
-  .toggle + a,
-  .menu {
-    display: none;
-  }
-
-  /* Stylinf the toggle lable */
-  .toggle {
-    display: block;
-    background-color: $menu-background;
-    padding: 14px 20px;
-    font-size: 17px;
-    text-decoration: none;
-    border: none;
-  }
-
-  .toggle:hover {
-    background-color: $menu-background-hover;
-  }
-
-  /* Display Dropdown when clicked on Parent Lable */
-  [id^="drop"]:checked + ul {
-    display: block;
-  }
-
-  /* Change menu item's width to 100% */
-  nav ul li {
-    display: block;
-    width: 100%;
-  }
-}
-
-@media all and (max-width: 330px) {
-  nav ul li {
-    display: block;
-    width: 94%;
-  }
-}
-
 .fullpage {
   min-height: 100vh;
+  padding-top: $nav-height;
 }
 
 h1,
@@ -187,7 +62,6 @@ h3 {
   background-image: url("images/board.jpg");
   background-size: cover;
   margin: 0 auto 0 auto;
-  padding: 0 1em 0 1em;
 }
 
 .white-bg {

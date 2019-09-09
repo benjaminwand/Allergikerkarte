@@ -1,0 +1,121 @@
+@import "config";
+
+/* nav related things */
+
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+#logo {
+  padding: 0;
+  text-align: center;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  color: $menu-text;
+  background-color: $menu-background;
+  font-family: "Open Sans", sans-serif;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  /* Hide the navigation menu by default */
+  ul {
+    display: none;
+  }
+  /* Change menu item's width to 100% */
+  ul li {
+    /*display: block;*/
+    color: $menu-text;
+    width: 100%;
+  }
+  ul li:hover {
+    background-color: $menu-background-hover;
+  }
+  a {
+    color: $menu-text;
+    text-decoration: none;
+  }
+}
+
+/* Styling the toggle lable */
+.toggle {
+  display: block;
+  background-color: $menu-background;
+  padding: 14px 20px;
+  font-size: 17px;
+  text-decoration: none;
+  border: none;
+}
+
+.toggle:hover {
+  background-color: $menu-background-hover;
+}
+
+/* Display Dropdown when clicked on Parent Lable */
+[id^="drop"]:checked + ul {
+  display: block;
+}
+
+/* Media Query desktop
+  --------------------------------------------- */
+
+@media all and (min-width: 769px) {
+  .toggle {
+    display: none;
+  }
+
+  /* Since we'll have the "ul li" "float:left"
+     * we need to add a clear after the container. */
+  /*  nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }*/
+  #logo {
+    display: inline-block;
+    padding: 0 30;
+    text-align: left;
+    font-size: 20px;
+    line-height: $nav-height;
+  }
+  nav {
+    /* Removing padding, margin and "list-style" from the "ul",
+     * and adding "position:relative" */
+    ul {
+      float: right;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: relative;
+      display: block;
+
+      /* Positioning the navigation items inline */
+      li {
+        margin: 0px;
+        background-color: $menu-background;
+        display: inline;
+      }
+    }
+    /* Styling the links */
+    a {
+      padding: 0px 20px;
+      color: $menu-text;
+      font-size: 17px;
+      text-decoration: none;
+      line-height: $nav-height;
+      float: left;
+    }
+    /* Background color change on Hover */
+    a:hover {
+      background-color: $menu-background-hover;
+    }
+  }
+}
+
+@media all and (max-width: 330px) {
+  nav ul li {
+    display: block;
+    width: 94%;
+  }
+}
