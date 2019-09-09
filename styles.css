@@ -2,7 +2,6 @@
 /* coordinate this with logo */
 /* sizes and colors of menu */
 /* coordinate this with logo */
-/* nav related things */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(https://fonts.googleapis.com/css?family=Oswald&display=swap);
@@ -13,7 +12,6 @@
 
 #logo {
   padding: 0;
-  /*  width: 100%;*/
   text-align: center;
 }
 
@@ -33,11 +31,11 @@ nav ul {
   display: none;
 }
 nav ul li {
-  /*display: block;*/
+  list-style: none;
   color: #fff;
   width: 100%;
 }
-nav ul li:hover {
+nav a:hover {
   background-color: #000;
 }
 nav a {

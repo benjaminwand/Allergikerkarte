@@ -1,15 +1,15 @@
 @import "config";
 
-/* nav related things */
-
 .toggle,
 [id^="drop"] {
   display: none;
 }
+
 #logo {
   padding: 0;
   text-align: center;
 }
+
 nav {
   margin: 0;
   padding: 0;
@@ -25,11 +25,11 @@ nav {
   }
   /* Change menu item's width to 100% */
   ul li {
-    /*display: block;*/
+    list-style: none;
     color: $menu-text;
     width: 100%;
   }
-  ul li:hover {
+  a:hover {
     background-color: $menu-background-hover;
   }
   a {
@@ -65,13 +65,6 @@ nav {
     display: none;
   }
 
-  /* Since we'll have the "ul li" "float:left"
-     * we need to add a clear after the container. */
-  /*  nav:after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
   #logo {
     display: inline-block;
     padding: 0 30;
