@@ -26,9 +26,7 @@ $(document).ready(function() {
 
   // close mobile navigation when navigation item is clicked
   $(".and-close-it").click(function() {
-    console.log("joa");
     $("nav :checkbox").click();
-    // $(".and-close-it").hide(); // also das geht schon mal aber ist halt one-way
   });
 
   // filter food items with checkboxes
