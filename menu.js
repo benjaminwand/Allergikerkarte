@@ -24,6 +24,13 @@ $(document).ready(function() {
     $(".hideinf").show();
   });
 
+  // close mobile navigation when navigation item is clicked
+  $(".and-close-it").click(function() {
+    console.log("joa");
+    $("nav :checkbox").click();
+    // $(".and-close-it").hide(); // also das geht schon mal aber ist halt one-way
+  });
+
   // filter food items with checkboxes
   $(".filters :checkbox, :radio").click(function() {
     if ($("input[name=category]:checked").length) {
