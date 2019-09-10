@@ -126,19 +126,21 @@ body {
   display: none;
 }
 
+/* make pages one viewport long */
 .fullpage {
   min-height: 100vh;
   padding-top: 70px;
 }
 
 .white-bg {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .center {
   text-align: center;
 }
 
+/* making the video responsve */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -164,6 +166,7 @@ h3 {
   font-family: Oswald;
 }
 
+/* menu */
 .infotext {
   font-family: sans-serif;
   font-size: small;
