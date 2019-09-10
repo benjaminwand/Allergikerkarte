@@ -69,13 +69,6 @@ nav a {
     display: none;
   }
 
-  /* Since we'll have the "ul li" "float:left"
-     * we need to add a clear after the container. */
-  /*  nav:after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
   #logo {
     display: inline-block;
     padding: 0 30;
@@ -138,6 +131,14 @@ body {
   padding-top: 70px;
 }
 
+.white-bg {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.center {
+  text-align: center;
+}
+
 h1,
 h2,
 h3 {
@@ -181,10 +182,6 @@ h3 {
   background-image: url("images/board.jpg");
   background-size: cover;
   margin: 0 auto 0 auto;
-}
-
-.white-bg {
-  background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* menu-page */
