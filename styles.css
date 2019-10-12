@@ -244,6 +244,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0em;
 }
 
 .products ul {
@@ -253,12 +254,11 @@ h3 {
 
 .products li {
   list-style-type: none;
-  padding: 0.25em;
+  padding-bottom: 0.25em;
   position: relative;
 }
 
 .products p {
-  padding: 0em;
   margin: 0em;
 }
 
