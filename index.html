@@ -97,26 +97,8 @@
                 ><input
                   type="checkbox"
                   name="category"
-                  value="nut-free"
-                />Nuss-frei</label
-              >
-            </li>
-            <li>
-              <label
-                ><input
-                  type="checkbox"
-                  name="category"
                   value="gluten-free"
                 />glutenfrei</label
-              >
-            </li>
-            <li>
-              <label
-                ><input
-                  type="checkbox"
-                  name="category"
-                  value="egg-free"
-                />Ei-free</label
               >
             </li>
             <li>
@@ -133,17 +115,28 @@
                 ><input
                   type="checkbox"
                   name="category"
-                  value="fish-free"
-                />Fisch-frei</label
+                  value="nut-free"
+                />Nuss-frei</label
               >
             </li>
+
             <li>
               <label
                 ><input
                   type="checkbox"
                   name="category"
-                  value="mustard-free"
-                />Senf-frei</label
+                  value="egg-free"
+                />Ei-free</label
+              >
+            </li>
+
+            <li>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="fish-free"
+                />Fisch-frei</label
               >
             </li>
             <li>
@@ -162,6 +155,15 @@
                   name="category"
                   value="alcohol-free"
                 />alkoholfrei</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="sulphur-free"
+                />nicht geschwefelt</label
               >
             </li>
             <li>
@@ -434,7 +436,7 @@
             <h3>Hauptgerichte</h3>
             <ul>
               <li
-                exclusion-category="vegan-red vegetarian-red gluten-free-red egg-free-red mustard-free-red"
+                exclusion-category="vegan-red vegetarian-red gluten-free-red egg-free-red"
               >
                 <p class="name">Schnitzel vom Duroc-Schwein</p>
                 <p class="description">
@@ -559,7 +561,7 @@
                 <p class="name">Trinkschokolade</p>
               </li>
               <li exclusion-category="vegan-red lactose-free-red">
-                <p class="description makespace">
+                <p class="description makespace85">
                   Hei&szlig;, aus feiner Bitterschokolade aus Himmelpfort
                 </p>
                 <p class="price">3,80 €</p>
@@ -633,10 +635,9 @@
               </li>
             </ul>
           </section>
-        </div>
-        <div class="column">
+
           <section class="chapter">
-            <h3 class="">Alkoholische Getr&auml;nke</h3>
+            <h3>Alkoholische Getr&auml;nke</h3>
             <ul>
               <li exclusion-category="alcohol-free-red gluten-free-red">
                 <p class="name">Bio-Bier der Braumanufaktur Templin 0,5l</p>
@@ -687,13 +688,13 @@
                 <p class="price">2,00 €</p>
               </li>
               <li exclusion-category="alcohol-free-red">
-                <p class="description makespace">
+                <p class="description makespace85">
                   Glina Obstbr&auml;nde aus Werder - diverse Sorten 40% Vol.
                 </p>
                 <p class="price">4,20 €</p>
               </li>
               <li exclusion-category="alcohol-free-red">
-                <p class="description makespace">
+                <p class="description makespace85">
                   Glina Lik&ouml;re aus Werder - diverse Sorten 42% Vol.
                 </p>
                 <p class="price">3,90 €</p>
@@ -714,41 +715,76 @@
               </li>
             </ul>
           </section>
-
           <section class="chapter">
             <h3>Weisser Wein</h3>
             <ul>
-              <li exclusion-category="alcohol-free-red">
-                <p class="name">chocolate</p>
-                <p class="description">voluptate velit esse cillum dolore eu</p>
-                <p class="price">2.50 €</p>
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="name makespace70">Grauburgunder - Weingut Schmidt</p>
+                <p class="price">5,80 € | 25,00 €</p>
               </li>
-              <li exclusion-category="alcohol-free-red">
-                <p class="name">espresso</p>
-                <p class="description">fugiat nulla pariatur excepteur sint</p>
-                <p class="price">1.50 €</p>
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description makespace70">
+                  Grauburgunder 2017 Naturwein, Eichstett
+                </p>
+                <p class="price">0,15l | 0,75l</p>
               </li>
-              <li exclusion-category="alcohol-free-red">
-                <p class="name">cappuccino</p>
-                <p class="description">obcaecat cupiditat non proident, sunt</p>
-                <p class="price">3 €</p>
-                <p class="maybe">
-                  we have oat milk and soy milk, our cappucino can be made
-                  vegan, please ask for it
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description">
+                  Feines vielschichtiges Bukett mit Ankl&auml;ngen von reifem,
+                  gr&uuml;nem Apfel. Sehr elegant und nachverlagernd durch sein
+                  erfrischendes S&auml;urespiel.
                 </p>
               </li>
+
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="name">Sylvaner - Weingut Schenk</p>
+                <p class="price">8,50 € | 40,00 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description makespace70">
+                  Sylvaner 2017 Handverlesen, Franken
+                </p>
+                <p class="price">0,15l | 0,75l</p>
+              </li>
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description">
+                  14 Monate im Barrique gereift, welches fein eingebunden ist.
+                  Besitzt viel Tiefe, ist cremig und w&uuml;rzig.
+                </p>
+              </li>
+
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="name makespace70">
+                  Trabener W&uuml;rzgarten - Martin M&uuml;llen
+                </p>
+                <p class="price">7,20 € | 34,00 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description">Riesling 2013 Kabinett, Mosel</p>
+                <p class="price">0,15l | 0,75l</p>
+              </li>
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description">
+                  Duft von frischen Kräutern, wei&szlig;en Bl&uuml;ten und
+                  grünem Apfel. Feiner Schmelz, mineralische Textur und extrem
+                  feine Frucht.
+                </p>
+              </li>
+
               <li exclusion-category="alcohol-free-red">
-                <p class="name">espresso</p>
-                <p class="description">fugiat nulla pariatur excepteur sint</p>
-                <p class="price">1.50 €</p>
+                <p class="name makespace70">
+                  Graves Superieur - Ch&acirc;teau Tour de Calens
+                </p>
+                <p class="price">8,50 € | 64,00 €</p>
               </li>
               <li exclusion-category="alcohol-free-red">
-                <p class="name">cappuccino</p>
-                <p class="description">obcaecat cupiditat non proident, sunt</p>
-                <p class="price">3 €</p>
-                <p class="maybe">
-                  we have oat milk and soy milk, our cappucino can be made
-                  vegan, please ask for it
+                <p class="description">Semillion 2010 Dessertwein, Bordeaux</p>
+                <p class="price">4 cl | 0,5l</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="description">
+                  Aromen von frischen Kr&auml;utern, Orangenabrieb und Quitten
+                  und feinen Holznoten.
                 </p>
               </li>
             </ul>
@@ -756,69 +792,62 @@
           <section class="chapter">
             <h3>Roter Wein</h3>
             <ul>
-              <li exclusion-category="alcohol-free-red">
-                <p class="name">cappuccino</p>
-                <p class="description">obcaecat cupiditat non proident, sunt</p>
-                <p class="price">3 €</p>
-                <p class="maybe">
-                  we have oat milk and soy milk, our cappucino can be made
-                  vegan, please ask for it
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="name makespace70">
+                  Monsenhor - Vinho Verde
+                </p>
+                <p class="price">3,90 € | 18,00 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description makespace70">
+                  Ros&eacute; Naturwein, 2015, Quinta de Lixa, Portugal
+                </p>
+                <p class="price">0,15l | 0,75l</p>
+              </li>
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description">
+                  Angenehme S&auml;ure, die im feinen Verh&auml;ltnis zur
+                  S&uuml;&szlig;e steht, eine volle Frucht und elegante Frische
+                  und Knackigkeit, die leicht moussiert.
                 </p>
               </li>
+
               <li exclusion-category="alcohol-free-red">
-                <p class="name">espresso</p>
-                <p class="description">fugiat nulla pariatur excepteur sint</p>
-                <p class="price">1.50 €</p>
+                <p class="name makespace70">
+                  Finca Antigua - Syrah
+                </p>
+                <p class="price">5,20 € | 27,00 €</p>
               </li>
               <li exclusion-category="alcohol-free-red">
-                <p class="name">cappuccino</p>
-                <p class="description">obcaecat cupiditat non proident, sunt</p>
-                <p class="price">3 €</p>
-                <p class="maybe">
-                  we have oat milk and soy milk, our cappucino can be made
-                  vegan, please ask for it
+                <p class="description">Syrah, Naturwein, 2014, Crianza</p>
+                <p class="price">4 cl | 0,5l</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="description">
+                  Fruchtiger Duft nach schwarzen Kirschen und roten
+                  Johannisbeeren, mit dem typisch kr&auml;uterw&uuml;rzigen Gout
+                  eines Syrah. Verbl&uuml;fft im Nachhall mit einer seidenfeinen
+                  Textur.
                 </p>
               </li>
-              <li exclusion-category="alcohol-free-red">
-                <p class="name">espresso</p>
-                <p class="description">fugiat nulla pariatur excepteur sint</p>
-                <p class="price">1.50 €</p>
-              </li>
-              <li exclusion-category="alcohol-free-red">
-                <p class="name">cappuccino</p>
-                <p class="description">obcaecat cupiditat non proident, sunt</p>
-                <p class="price">3 €</p>
-                <p class="maybe">
-                  we have oat milk and soy milk, our cappucino can be made
-                  vegan, please ask for it
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="name makespace85">
+                  Les Quilles Libres Rouge - Le Clot de
+                  <span class="nobreak">l&acute;Origine</span>
                 </p>
+                <p class="price">48,00 €</p>
               </li>
-              <li exclusion-category="alcohol-free-red">
-                <p class="name">espresso</p>
-                <p class="description">fugiat nulla pariatur excepteur sint</p>
-                <p class="price">1.50 €</p>
-              </li>
-              <li exclusion-category="alcohol-free-red">
-                <p class="name">cappuccino</p>
-                <p class="description">obcaecat cupiditat non proident, sunt</p>
-                <p class="price">3 €</p>
-                <p class="maybe">
-                  we have oat milk and soy milk, our cappucino can be made
-                  vegan, please ask for it
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description makespace85">
+                  60% Grenache, 30% Syrah, Naturwein, 2015, Roussilon
                 </p>
+                <p class="price">0,75l</p>
               </li>
-              <li exclusion-category="">
-                <p class="name">espresso</p>
-                <p class="description">fugiat nulla pariatur excepteur sint</p>
-                <p class="price">1.50 €</p>
-              </li>
-              <li exclusion-category="vegan-maybe">
-                <p class="name">cappuccino</p>
-                <p class="description">obcaecat cupiditat non proident, sunt</p>
-                <p class="price">3 €</p>
-                <p class="maybe">
-                  we have oat milk and soy milk, our cappucino can be made
-                  vegan, please ask for it
+              <li exclusion-category="alcohol-free-red sulphur-free-red">
+                <p class="description">
+                  Saftige, dunkle Beerenfrucht, dicht sowie fein würzig und
+                  angenehm frisch. Auf der Zunge mit schöner, saftiger
+                  Gerbstoffstruktur und vollundiger Frucht. Sehr trinkig.
                 </p>
               </li>
             </ul>

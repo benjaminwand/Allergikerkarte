@@ -199,9 +199,18 @@ h3 {
   max-width: 96%;
 }
 
-.makespace {
+.makespace85 {
   /* name not running into price */
   max-width: 85%;
+}
+
+.makespace70 {
+  /* name not running into price */
+  max-width: 70%;
+}
+
+.nobreak {
+  white-space: nowrap;
 }
 
 #about {
