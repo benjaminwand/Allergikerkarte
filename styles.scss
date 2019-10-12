@@ -85,7 +85,11 @@ h3 {
 .description {
   font-style: italic;
   /* descrition not coming too close to next row */
-  max-width: 95%;
+  max-width: 96%;
+}
+.makespace {
+  /* name not running into price */
+  max-width: 85%;
 }
 
 #about {

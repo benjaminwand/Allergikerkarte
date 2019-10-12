@@ -147,6 +147,24 @@
               >
             </li>
             <li>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="caffeine-free"
+                />koffeinfrei</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="alcohol-free"
+                />alkoholfrei</label
+              >
+            </li>
+            <li>
               <button class="showinf showinfo">More info</button>
             </li>
           </ul>
@@ -214,7 +232,9 @@
           <section class="chapter">
             <h3>Kaffee & Kuchen</h3>
             <ul>
-              <li exclusion-category="vegan-maybe lactose-free-maybe">
+              <li
+                exclusion-category="vegan-maybe lactose-free-maybe caffeine-free-red"
+              >
                 <p class="name">Kaffeespezialit&auml;ten</p>
                 <p class="description"></p>
                 <p class="price"></p>
@@ -223,44 +243,50 @@
                   haben, bitte fragen SIe bei Bedraf danach.
                 </p>
               </li>
-              <li exclusion-category="">
+              <li exclusion-category="caffeine-free-red">
                 <p class="name"></p>
                 <p class="description">Americano</p>
                 <p class="price">2,50 €</p>
               </li>
-              <li exclusion-category="vegan-maybe lactose-free-maybe">
+              <li
+                exclusion-category="vegan-maybe lactose-free-maybe caffeine-free-red"
+              >
                 <p class="name"></p>
                 <p class="description">Milchkaffee</p>
                 <p class="price">3,50 €</p>
               </li>
-              <li exclusion-category="vegan-maybe lactose-free-maybe">
+              <li
+                exclusion-category="vegan-maybe lactose-free-maybe caffeine-free-red"
+              >
                 <p class="name"></p>
                 <p class="description">Cappuccino</p>
                 <p class="price">3,20 €</p>
               </li>
-              <li exclusion-category="vegan-maybe lactose-free-maybe">
+              <li
+                exclusion-category="vegan-maybe lactose-free-maybe caffeine-free-red"
+              >
                 <p class="name"></p>
                 <p class="description">Latte Macchiato</p>
                 <p class="price">3,60 €</p>
               </li>
-              <li exclusion-category="">
+              <li exclusion-category="caffeine-free-red">
                 <p class="name"></p>
                 <p class="description">Espresso</p>
                 <p class="price">1,90 €</p>
               </li>
-              <li exclusion-category="">
+              <li exclusion-category="caffeine-free-red">
                 <p class="name"></p>
                 <p class="description">Espresso Macchiato</p>
                 <p class="price">2,10 €</p>
               </li>
-              <li exclusion-category="">
+              <li exclusion-category="caffeine-free-red">
                 <p class="name"></p>
                 <p class="description">Eiskaffee</p>
                 <p class="price">4,50 €</p>
               </li>
-              <li exclusion-category="">
+              <li exclusion-category="caffeine-free-red">
                 <p class="name"></p>
-                <p class="description">
+                <p>
                   Unsere Kaffeespezialit&auml;ten werden mit fair gehandeltem
                   und nachhaltig angebauten Bohnen des Guggenheimer Coffee
                   zubereitet.
@@ -309,7 +335,9 @@
                 <p class="description">Mit 1 Kugel Bio-Eis</p>
                 <p class="price">5,00 €</p>
               </li>
-              <li exclusion-category="vegan-red lactose-free-red">
+              <li
+                exclusion-category="vegan-red lactose-free-red gluten-free-red"
+              >
                 <p class="name">Ein L&ouml;ffel Schlagsahne zum Kuchen</p>
                 <p class="description"></p>
                 <p class="price">0,50 €</p>
@@ -531,7 +559,7 @@
                 <p class="name">Trinkschokolade</p>
               </li>
               <li exclusion-category="vegan-red lactose-free-red">
-                <p class="description">
+                <p class="description makespace">
                   Hei&szlig;, aus feiner Bitterschokolade aus Himmelpfort
                 </p>
                 <p class="price">3,80 €</p>
@@ -540,7 +568,7 @@
                 <p class="description">Kalt</p>
                 <p class="price">3,50 €</p>
               </li>
-              <li exclusion-category="">
+              <li exclusion-category="caffeine-free-red">
                 <p class="name">Tee aus der Kaffeer&ouml;sterei Himmelpfort</p>
                 <p class="description">Gr&uuml;ner Tee <br />Schwarzer Tee</p>
                 <p class="price">3,10 €</p>
@@ -577,11 +605,20 @@
               </li>
               <li exclusion-category="">
                 <p class="name">ChariTea 0,33l</p>
-                <p class="description">
-                  Gr&uuml;n, mit Ingwer<br />Rotbusch, mit Passionsfrucht
-                </p>
+                <p class="description"></p>
                 <p class="price">3,30 €</p>
               </li>
+              <li exclusion-category="caffeine-free-red">
+                <p class="description">
+                  Gr&uuml;n, mit Ingwer
+                </p>
+              </li>
+              <li exclusion-category="">
+                <p class="description">
+                  Rotbusch, mit Passionsfrucht
+                </p>
+              </li>
+
               <li exclusion-category="">
                 <p class="name">Neumarkter Lammsbr&auml;u Bio Cola 0,33l</p>
                 <p class="price">3,20 €</p>
@@ -599,14 +636,113 @@
         </div>
         <div class="column">
           <section class="chapter">
-            <h3>Alkoholische Getr&auml;nke</h3>
+            <h3 class="">Alkoholische Getr&auml;nke</h3>
             <ul>
-              <li exclusion-category="">
+              <li exclusion-category="alcohol-free-red gluten-free-red">
+                <p class="name">Bio-Bier der Braumanufaktur Templin 0,5l</p>
+                <p class="description">Potsdamer Stange, Hell, Dunkel</p>
+                <p class="price">4,20 €</p>
+              </li>
+              <li exclusion-category="gluten-free-red">
+                <p class="name">Neumarkter Lammsbr&auml;u</p>
+              </li>
+              <li exclusion-category="gluten-free-red">
+                <p class="description">Wei&szlig;e mit und ohne Alkohol</p>
+                <p class="price">3,80 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-redgluten-free-red">
+                <p class="description">Radler 0,33l</p>
+                <p class="price">3,10 €</p>
+              </li>
+              <li exclusion-category="gluten-free-red">
+                <p class="description">Alkoholfrei 0,33l</p>
+                <p class="price">3,10 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">Aperitif 0,15l</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="description">Gutshof Kraatz Birnensecco</p>
+                <p class="price">4,50 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="description">
+                  Sekt Maximilian, heimische Privatkellerei, Pfalz
+                </p>
+              </li>
+
+              <li exclusion-category="alcohol-free-red">
+                <p class="description">0,2l</p>
+                <p class="price">8,50 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="description">0,75l</p>
+                <p class="price">25,00 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">Digestif 2,00cl</p>
+                <p class="description">
+                  Kr&auml;uterschnaps, Nordh&auml;user Doppelkorn
+                </p>
+                <p class="price">2,00 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="description makespace">
+                  Glina Obstbr&auml;nde aus Werder - diverse Sorten 40% Vol.
+                </p>
+                <p class="price">4,20 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="description makespace">
+                  Glina Lik&ouml;re aus Werder - diverse Sorten 42% Vol.
+                </p>
+                <p class="price">3,90 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">Whisky 2,00cl</p>
+                <p class="description ">
+                  Glina Whisky, Single Malt, 5 Jahre im Bordeauxfass gereift
+                </p>
+                <p class="price">6,90 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">Longdrinks</p>
+                <p class="description">
+                  Aperol Spritzz, Gin Tonic, Sanddorn Spritz
+                </p>
+                <p class="price">7,00 €</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="chapter">
+            <h3>Weisser Wein</h3>
+            <ul>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">chocolate</p>
+                <p class="description">voluptate velit esse cillum dolore eu</p>
+                <p class="price">2.50 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
                 <p class="name">espresso</p>
                 <p class="description">fugiat nulla pariatur excepteur sint</p>
                 <p class="price">1.50 €</p>
               </li>
-              <li exclusion-category="vegan-maybe">
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">cappuccino</p>
+                <p class="description">obcaecat cupiditat non proident, sunt</p>
+                <p class="price">3 €</p>
+                <p class="maybe">
+                  we have oat milk and soy milk, our cappucino can be made
+                  vegan, please ask for it
+                </p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">espresso</p>
+                <p class="description">fugiat nulla pariatur excepteur sint</p>
+                <p class="price">1.50 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
                 <p class="name">cappuccino</p>
                 <p class="description">obcaecat cupiditat non proident, sunt</p>
                 <p class="price">3 €</p>
@@ -617,20 +753,60 @@
               </li>
             </ul>
           </section>
-
-          <section class="chapter">
-            <h3>Weisser Wein</h3>
-            <ul>
-              <li exclusion-category="vegan-red">
-                <p class="name">chocolate</p>
-                <p class="description">voluptate velit esse cillum dolore eu</p>
-                <p class="price">2.50 €</p>
-              </li>
-            </ul>
-          </section>
           <section class="chapter">
             <h3>Roter Wein</h3>
             <ul>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">cappuccino</p>
+                <p class="description">obcaecat cupiditat non proident, sunt</p>
+                <p class="price">3 €</p>
+                <p class="maybe">
+                  we have oat milk and soy milk, our cappucino can be made
+                  vegan, please ask for it
+                </p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">espresso</p>
+                <p class="description">fugiat nulla pariatur excepteur sint</p>
+                <p class="price">1.50 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">cappuccino</p>
+                <p class="description">obcaecat cupiditat non proident, sunt</p>
+                <p class="price">3 €</p>
+                <p class="maybe">
+                  we have oat milk and soy milk, our cappucino can be made
+                  vegan, please ask for it
+                </p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">espresso</p>
+                <p class="description">fugiat nulla pariatur excepteur sint</p>
+                <p class="price">1.50 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">cappuccino</p>
+                <p class="description">obcaecat cupiditat non proident, sunt</p>
+                <p class="price">3 €</p>
+                <p class="maybe">
+                  we have oat milk and soy milk, our cappucino can be made
+                  vegan, please ask for it
+                </p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">espresso</p>
+                <p class="description">fugiat nulla pariatur excepteur sint</p>
+                <p class="price">1.50 €</p>
+              </li>
+              <li exclusion-category="alcohol-free-red">
+                <p class="name">cappuccino</p>
+                <p class="description">obcaecat cupiditat non proident, sunt</p>
+                <p class="price">3 €</p>
+                <p class="maybe">
+                  we have oat milk and soy milk, our cappucino can be made
+                  vegan, please ask for it
+                </p>
+              </li>
               <li exclusion-category="">
                 <p class="name">espresso</p>
                 <p class="description">fugiat nulla pariatur excepteur sint</p>
