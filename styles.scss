@@ -139,23 +139,27 @@ h3 {
   flex-grow: 0.2;
 }
 
-.products {
+.products,
+.drinks {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0em;
 }
-.products ul {
+.products ul,
+.drinks ul {
   padding: 0em 1em;
   margin-top: 0.5em;
 }
-.products li {
+.products li,
+.drinks li {
   list-style-type: none;
   padding-bottom: 0.25em;
   position: relative;
 }
 
-.products p {
+.products p,
+.drinks p {
   margin: 0em;
 }
 

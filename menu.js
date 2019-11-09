@@ -60,4 +60,16 @@ $(document).ready(function() {
       }
     });
   });
+
+  // show drinks in the separate list
+  $(".filters :checkbox").click(function() {
+    if ($("input[name=category]:checked").length) {
+      $(".drinks section").hide();
+      $("input:checked").each(function() {
+        $('section[inclusion-category*="' + $(this).val() + '"]').show();
+      });
+    } else {
+      $(".drinks section").hide();
+    }
+  });
 });
