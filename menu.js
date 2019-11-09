@@ -2,6 +2,7 @@ $(document).ready(function() {
   $(".maybe").hide(); // hide maybe-texts
 
   $(".showflr").show(); // show filter-button
+  $(".showdrk").show(); // show filter-botton in drinks-section
   $(".showinf").show(); // show info-button
 
   // hide/show filter button
@@ -12,6 +13,16 @@ $(document).ready(function() {
   $(".showfilter").click(function() {
     $(".showflr").hide();
     $(".hideflr").show();
+  });
+
+  // hide/show filter button for drinks
+  $(".hidedrinkfilter").click(function() {
+    $(".hidedrk").hide();
+    $(".showdrk").show();
+  });
+  $(".showdrinkfilter").click(function() {
+    $(".showdrk").hide();
+    $(".hidedrk").show();
   });
 
   // hide/show info button
