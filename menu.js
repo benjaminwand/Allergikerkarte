@@ -41,7 +41,7 @@ $(document).ready(function() {
   });
 
   // filter food items with checkboxes
-  $(".filters :checkbox, :radio").click(function() {
+  $(".filters :checkbox, .filters :radio").click(function() {
     if ($("input[name=category]:checked").length) {
       $(".products li").show();
       $(".products li .maybe").hide();
@@ -82,5 +82,19 @@ $(document).ready(function() {
     } else {
       $(".drinks section").hide();
     }
+
+    // hiding first column if empty
+    $(".column").each(function() {
+      var hiddenColumn = $(this)
+        .children()
+        .filter(function() {
+          return $(this).css("display") !== "none";
+        });
+      if (hiddenColumn.length) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
   });
 });
