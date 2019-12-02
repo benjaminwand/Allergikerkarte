@@ -2,6 +2,9 @@
 /* coordinate this with logo */
 /* sizes and colors of menu */
 /* coordinate this with logo */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
 .toggle,
 [id^=drop] {
   display: none;
@@ -112,11 +115,6 @@ nav a {
     width: 94%;
   }
 }
-/*
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
-@import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
-*/
 html,
 body {
   margin: 0;
@@ -291,6 +289,26 @@ h3 {
 .maybe {
   font-style: italic;
   color: #a55c09;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  .column {
+    flex-grow: 0;
+    width: 47%;
+  }
+
+  .fullpage {
+    min-height: 0;
+    padding-top: 0;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

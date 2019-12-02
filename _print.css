@@ -1,0 +1,21 @@
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  .column {
+    flex-grow: 0;
+    width: 47%;
+  }
+
+  .fullpage {
+    min-height: 0;
+    padding-top: 0;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+/*# sourceMappingURL=_print.css.map */
