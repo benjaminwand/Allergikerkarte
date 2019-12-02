@@ -3,7 +3,6 @@
 /* sizes and colors of menu */
 /* coordinate this with logo */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
 .toggle,
 [id^=drop] {
@@ -121,7 +120,7 @@ body {
   padding: 0;
 }
 
-/* hide things that will be used in JavaScript */
+/* hide things that will be used in JavaScript only */
 .hidecss {
   display: none;
 }
@@ -163,7 +162,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  font-family: Fondamento;
+  font-family: Fondamento, Serif;
 }
 
 /* menu */
@@ -308,6 +307,10 @@ h3 {
 
   section {
     page-break-inside: avoid;
+  }
+
+  #getraenke {
+    page-break-before: always;
   }
 }
 

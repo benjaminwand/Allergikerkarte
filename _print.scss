@@ -13,4 +13,7 @@
   section {
     page-break-inside: avoid;
   }
+  #getraenke {
+    page-break-before: always;
+  }
 }

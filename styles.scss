@@ -2,7 +2,6 @@
 @import "navigation";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
 
 html,
@@ -11,7 +10,7 @@ body {
   padding: 0;
 }
 
-/* hide things that will be used in JavaScript */
+/* hide things that will be used in JavaScript only */
 .hidecss {
   display: none;
 }
