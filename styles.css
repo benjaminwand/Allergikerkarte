@@ -305,7 +305,7 @@ h3 {
     padding-top: 0;
   }
 
-  section {
+  .drinks section {
     page-break-inside: avoid;
   }
 
