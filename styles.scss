@@ -133,17 +133,13 @@ h3 {
   white-space: nowrap;
 }
 
-.column {
-  width: 350px;
-  flex-grow: 0.2;
+.chapter {
+  page-break-inside: avoid;
 }
 
 .products,
 .drinks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0em;
+  column-width: 350px;
 }
 .products ul,
 .drinks ul {
