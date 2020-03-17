@@ -250,17 +250,20 @@ h3 {
 
 .chapter {
   page-break-inside: avoid;
+  position: relative;
 }
 
 .products,
 .drinks {
-  column-width: 350px;
+  columns: 3 350px;
+  column-fill: auto;
 }
 
 .products ul,
 .drinks ul {
   padding: 0em 1em;
   margin-top: 0.5em;
+  position: relative;
 }
 
 .products li,
@@ -268,6 +271,7 @@ h3 {
   list-style-type: none;
   padding-bottom: 0.25em;
   position: relative;
+  page-break-inside: avoid;
 }
 
 .products p,

@@ -56,7 +56,7 @@ $(document).ready(function() {
       $('li[exclusion-category*="' + $(this).val() + '-maybe"] .maybe').hide();
     }
 
-    // hiding chapters
+    // hiding chapters if empty
     $(".chapter").each(function() {
       var hiddenLiItems = $(this)
         .children("ul")
@@ -72,7 +72,7 @@ $(document).ready(function() {
     });
   });
 
-  // show drinks in the separate list
+  // filter drinks in the separate list
   $(".filters :checkbox").click(function() {
     if ($("input[name=category]:checked").length) {
       $(".drinks section").hide();
@@ -82,20 +82,6 @@ $(document).ready(function() {
     } else {
       $(".drinks section").hide();
     }
-
-    // hiding first column if empty
-    $(".column").each(function() {
-      var hiddenColumn = $(this)
-        .children()
-        .filter(function() {
-          return $(this).css("display") !== "none";
-        });
-      if (hiddenColumn.length) {
-        $(this).show();
-      } else {
-        $(this).hide();
-      }
-    });
   });
 
   // smooth scrolling
