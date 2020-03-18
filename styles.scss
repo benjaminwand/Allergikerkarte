@@ -8,6 +8,11 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: calc(
+    #{$min-font-size-px} + (#{$max-font-size} - #{$min-font-size}) * ((
+            100vw - #{$min-viewport-px}
+          ) / (#{$max-viewport} - #{$min-viewport}))
+  );
 }
 
 /* hide things that will be used in JavaScript only */
@@ -143,7 +148,9 @@ h3 {
 
 .products,
 .drinks {
-  columns: 5 20em;
+  -moz-columns: $columns-number 20em;
+  columns: $columns-number 20em;
+  -moz-column-fill: auto;
   column-fill: auto;
 }
 .products ul,

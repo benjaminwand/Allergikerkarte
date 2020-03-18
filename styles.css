@@ -1,7 +1,13 @@
 /* sizes and colors of menu */
 /* coordinate this with logo */
+/* menu */
+/* font sizes */
+/* expected viewports */
 /* sizes and colors of menu */
 /* coordinate this with logo */
+/* menu */
+/* font sizes */
+/* expected viewports */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
 .toggle,
@@ -118,6 +124,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: calc( 16px + (20 - 16) * (( 100vw - 320px ) / (1600 - 320)) );
 }
 
 /* hide things that will be used in JavaScript only */
@@ -258,7 +265,9 @@ h3 {
 
 .products,
 .drinks {
+  -moz-columns: 5 20em;
   columns: 5 20em;
+  -moz-column-fill: auto;
   column-fill: auto;
 }
 
