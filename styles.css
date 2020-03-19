@@ -125,6 +125,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: calc( 16px + (20 - 16) * (( 100vw - 320px ) / (1600 - 320)) );
+  scroll-snap-type: y mandatory;
+  /* Vertikal Scrollen und Snap Points streng einhalten */
 }
 
 /* hide things that will be used in JavaScript only */
@@ -136,6 +138,8 @@ body {
 .fullpage {
   min-height: 100vh;
   padding-top: 70px;
+  scroll-snap-align: start;
+  /* An der Oberkante jeder Sektion soll gestoppt werden */
 }
 
 .white-bg {
