@@ -269,10 +269,7 @@ h3 {
 
 .products,
 .drinks {
-  -moz-columns: 5 20em;
   columns: 5 20em;
-  -moz-column-fill: auto;
-  column-fill: auto;
 }
 
 .products ul,

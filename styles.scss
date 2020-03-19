@@ -150,10 +150,7 @@ h3 {
 
 .products,
 .drinks {
-  -moz-columns: $columns-number 20em;
   columns: $columns-number 20em;
-  -moz-column-fill: auto;
-  column-fill: auto;
 }
 .products ul,
 .drinks ul {
