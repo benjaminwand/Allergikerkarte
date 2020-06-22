@@ -1,13 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
+
 @import "normalize";
 @import "config";
 @import "navigation";
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
-
 html,
 body {
-  margin: 0;
   padding: 0;
   font-size: calc(
     #{$min-font-size-px} + (#{$max-font-size} - #{$min-font-size}) * ((

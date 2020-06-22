@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,8 +7,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
 html {
   line-height: 1.15;
   /* 1 */
@@ -339,12 +339,12 @@ template {
   display: none;
 }
 
-/* sizes and colors of menu */
+/* sizes and colors of menu, arranged with variables */
 /* coordinate this with logo */
 /* menu */
 /* font sizes */
 /* expected viewports */
-/* sizes and colors of menu */
+/* sizes and colors of menu, arranged with variables */
 /* coordinate this with logo */
 /* menu */
 /* font sizes */
@@ -461,7 +461,6 @@ nav a {
 }
 html,
 body {
-  margin: 0;
   padding: 0;
   font-size: calc( 16px + (20 - 16) * (( 100vw - 320px ) / (1600 - 320)) );
   scroll-snap-type: y mandatory;
