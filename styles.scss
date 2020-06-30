@@ -13,7 +13,8 @@ body {
             100vw - #{$min-viewport-px}
           ) / (#{$max-viewport} - #{$min-viewport}))
   );
-  scroll-snap-type: y mandatory; /* Vertikal Scrollen und Snap Points streng einhalten */
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory; /* Vertikal Scrollen und Snap Points streng einhalten */
 }
 
 /* hide things that will be used in JavaScript only */
@@ -152,7 +153,8 @@ h3 {
 }
 
 .chapter {
-  break-inside: avoid-column;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid-column;
   position: relative;
   margin: 0 auto;
   display: inline-block;
@@ -161,7 +163,8 @@ h3 {
 
 .products,
 .drinks {
-  columns: $columns-number 20rem;
+  -moz-columns: $columns-number 20rem;
+       columns: $columns-number 20rem;
 }
 .products ul,
 .drinks ul {
