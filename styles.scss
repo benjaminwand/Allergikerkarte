@@ -13,8 +13,8 @@ body {
             100vw - #{$min-viewport-px}
           ) / (#{$max-viewport} - #{$min-viewport}))
   );
-  -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory; /* Vertikal Scrollen und Snap Points streng einhalten */
+  -ms-scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity; /* Vertikal Scrollen und Snap Points streng einhalten */
 }
 
 /* hide things that will be used in JavaScript only */
