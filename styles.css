@@ -1,5 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Fondamento&display=swap);
+@font-face {
+  font-family: "Open Sans";
+  src: url(./fonts/OpenSans-Regular.eot);
+  src: url(./fonts/OpenSans-Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/OpenSans-Regular.otf) format("otf"), url(./fonts/OpenSans-Regular.ttf) format("truetype"), url(./fonts/OpenSans-Regular.woff) format("woff"), url(./fonts/OpenSans-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Fondamento";
+  src: url(./fonts/Fondamento-Regular.eot);
+  src: url(./fonts/Fondamento-Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/Fondamento-Regular.otf) format("otf"), url(./fonts/Fondamento-Regular.ttf) format("truetype"), url(./fonts/Fondamento-Regular.woff) format("woff"), url(./fonts/Fondamento-Regular.woff2) format("woff2");
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -462,10 +470,10 @@ nav a {
 html,
 body {
   padding: 0;
+  font-family: "Open Sans", sans-serif;
   font-size: calc( 16px + (20 - 16) * (( 100vw - 320px ) / (1600 - 320)) );
-  -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
-  /* Vertikal Scrollen und Snap Points streng einhalten */
+  -ms-scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity;
 }
 
 /* hide things that will be used in JavaScript only */
@@ -512,7 +520,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  font-family: Fondamento, Serif;
+  font-family: "Fondamento", Serif;
 }
 
 /* menu-page */
