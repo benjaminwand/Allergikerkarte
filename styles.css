@@ -541,13 +541,15 @@ h3 {
   margin: 0.5em 1em;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
 }
 
 .filters li {
   margin: 0.5em 0 0 0;
   list-style-type: none;
-  white-space: nowrap;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .filters input {
