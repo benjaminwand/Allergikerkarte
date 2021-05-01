@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url(./fonts/OpenSans-Regular.eot);
-  src: url(./fonts/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
-       url(./fonts/OpenSans-Regular.otf) format('otf'),
-       url(./fonts/OpenSans-Regular.ttf) format('truetype'),
-       url(./fonts/OpenSans-Regular.woff) format('woff'),
-       url(./fonts/OpenSans-Regular.woff2) format('woff2');
+  src: url(./fonts/OpenSans-Regular.eot?#iefix) format("embedded-opentype"),
+    url(./fonts/OpenSans-Regular.otf) format("otf"),
+    url(./fonts/OpenSans-Regular.ttf) format("truetype"),
+    url(./fonts/OpenSans-Regular.woff) format("woff"),
+    url(./fonts/OpenSans-Regular.woff2) format("woff2");
 }
 @font-face {
-  font-family: 'Fondamento';
+  font-family: "Fondamento";
   src: url(./fonts/Fondamento-Regular.eot);
-  src: url(./fonts/Fondamento-Regular.eot?#iefix) format('embedded-opentype'),
-       url(./fonts/Fondamento-Regular.otf) format('otf'),
-       url(./fonts/Fondamento-Regular.ttf) format('truetype'),
-       url(./fonts/Fondamento-Regular.woff) format('woff'),
-       url(./fonts/Fondamento-Regular.woff2) format('woff2');
+  src: url(./fonts/Fondamento-Regular.eot?#iefix) format("embedded-opentype"),
+    url(./fonts/Fondamento-Regular.otf) format("otf"),
+    url(./fonts/Fondamento-Regular.ttf) format("truetype"),
+    url(./fonts/Fondamento-Regular.woff) format("woff"),
+    url(./fonts/Fondamento-Regular.woff2) format("woff2");
 }
 
 @import "normalize";
@@ -24,7 +24,7 @@
 html,
 body {
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: calc(
     #{$min-font-size-px} + (#{$max-font-size} - #{$min-font-size}) * ((
             100vw - #{$min-viewport-px}
@@ -46,31 +46,8 @@ body {
   scroll-snap-align: start; /* An der Oberkante jeder Sektion soll gestoppt werden */
 }
 
-.white-bg {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 .center {
   text-align: center;
-}
-
-/* making the video responsve */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 h1,
@@ -78,6 +55,10 @@ h2,
 h3 {
   text-align: center;
   font-family: $header-font;
+}
+
+#about p {
+  max-width: 60ch;
 }
 
 /* menu-page */
@@ -140,7 +121,7 @@ h3 {
   }
 }
 
-name {
+.name {
   font-weight: bold;
   /* name not running into price */
   max-width: 85%;
@@ -163,14 +144,8 @@ name {
   white-space: nowrap;
 }
 
-#about {
-  background-image: url("images/board.jpg");
-  background-size: cover;
-  margin: 0 auto 0 auto;
-}
-
 .chapter {
-  -moz-column-break-inside: avoid;
+  -moz-column-break-inside: avoid; 
   break-inside: avoid-column;
   position: relative;
   margin: 0 auto;

@@ -416,7 +416,7 @@ nav a {
 
 /* Media Query desktop
   --------------------------------------------- */
-@media all and (min-width: 769px) {
+@media all and (min-width: 650px) {
   .toggle {
     display: none;
   }
@@ -489,31 +489,8 @@ body {
   /* An der Oberkante jeder Sektion soll gestoppt werden */
 }
 
-.white-bg {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 .center {
   text-align: center;
-}
-
-/* making the video responsve */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 h1,
@@ -521,6 +498,10 @@ h2,
 h3 {
   text-align: center;
   font-family: "Fondamento", Serif;
+}
+
+#about p {
+  max-width: 60ch;
 }
 
 /* menu-page */
@@ -586,7 +567,7 @@ h3 {
   padding: 0;
 }
 
-name {
+.name {
   font-weight: bold;
   /* name not running into price */
   max-width: 85%;
@@ -610,12 +591,6 @@ name {
 
 .nobreak {
   white-space: nowrap;
-}
-
-#about {
-  background-image: url("images/board.jpg");
-  background-size: cover;
-  margin: 0 auto 0 auto;
 }
 
 .chapter {
