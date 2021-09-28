@@ -57,6 +57,11 @@ h3 {
   font-family: $header-font;
 }
 
+button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
 #about p {
   max-width: 60ch;
 }
